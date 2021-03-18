@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userOverrides>
+    <override>
+        <path>C:\Users\User\Desktop\123\Lab2\main.cpp</path>
+        <encoding>Win-1251</encoding>
+    </override>
+    <override>
+        <path>C:\Users\User\Desktop\stm32Labs-master\Lab2\main.cpp</path>
+        <encoding>Win-1251</encoding>
+    </override>
+    <override>
+        <path>C:\Users\User\Desktop\stm32Labs-master\Lab4\Lab2\main.cpp</path>
+        <encoding>Win-1251</encoding>
+    </override>
+</userOverrides>

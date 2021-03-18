@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userOverrides>
+    <override>
+        <path>E:\IARlab6\AHardware\Garlands\garlands.hpp</path>
+        <encoding>Win-1251</encoding>
+    </override>
+    <override>
+        <path>E:\POIP\CrTree\AHardware\Garlands\garlands.hpp</path>
+        <encoding>Win-1251</encoding>
+    </override>
+</userOverrides>

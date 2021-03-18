@@ -1,0 +1,327 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.2.214/W32 for ARM                  18/Mar/2021  19:58:09
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =  E:\POIP\UART\Debug\Exe\1.out
+#    Map file     =  E:\POIP\UART\Debug\List\1.map
+#    Command line =
+#        -f C:\Users\D9F8~1\AppData\Local\Temp\EW8E86.tmp
+#        (E:\POIP\UART\Debug\Obj\main.o E:\POIP\UART\Debug\Obj\startupF411RE.o
+#        --no_out_extension -o E:\POIP\UART\Debug\Exe\1.out --redirect
+#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
+#        E:\POIP\UART\Debug\List\1.map --config "D:\Папка\Универ\7
+#        семак\IAR\arm\config\linker\ST\stm32f411xE.icf" --semihosting
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor        = *
+__CPP_Exceptions = Disabled
+__CPP_Language   = C++14
+__SystemLibrary  = DLib
+__dlib_version   = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x807'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2001'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x198
+  .intvec            const     0x800'0000   0x198  startupF411RE.o [1]
+                             - 0x800'0198   0x198
+
+"P1":                                       0x608
+  .text              ro code   0x800'0198    0xd0  main.o [1]
+  .text              ro code   0x800'0268    0x10  main.o [1]
+  .text              ro code   0x800'0278    0x10  main.o [1]
+  .text              ro code   0x800'0288    0x14  main.o [1]
+  .text              ro code   0x800'029c    0x1c  main.o [1]
+  .text              ro code   0x800'02b8    0x10  main.o [1]
+  .text              ro code   0x800'02c8    0x10  main.o [1]
+  .text              ro code   0x800'02d8    0x10  main.o [1]
+  .text              ro code   0x800'02e8    0x14  main.o [1]
+  .text              ro code   0x800'02fc    0x14  main.o [1]
+  .text              ro code   0x800'0310    0x14  main.o [1]
+  .text              ro code   0x800'0324    0x14  main.o [1]
+  .text              ro code   0x800'0338    0x10  main.o [1]
+  .text              ro code   0x800'0348    0x10  main.o [1]
+  .text              ro code   0x800'0358    0x14  main.o [1]
+  .text              ro code   0x800'036c    0x14  main.o [1]
+  .text              ro code   0x800'0380    0x10  main.o [1]
+  .text              ro code   0x800'0390    0x34  main.o [1]
+  .text              ro code   0x800'03c4    0x10  main.o [1]
+  .text              ro code   0x800'03d4    0x10  main.o [1]
+  .text              ro code   0x800'03e4    0x14  main.o [1]
+  .text              ro code   0x800'03f8    0x10  main.o [1]
+  .text              ro code   0x800'0408     0xc  main.o [1]
+  .text              ro code   0x800'0414    0x10  main.o [1]
+  .text              ro code   0x800'0424    0x10  main.o [1]
+  .text              ro code   0x800'0434     0xc  main.o [1]
+  .text              ro code   0x800'0440     0xc  main.o [1]
+  .text              ro code   0x800'044c    0x10  main.o [1]
+  .text              ro code   0x800'045c     0xc  main.o [1]
+  .text              ro code   0x800'0468     0xe  main.o [1]
+  .text              ro code   0x800'0476    0x2e  copy_init3.o [4]
+  .text              ro code   0x800'04a4    0x56  ABImemcpy_unaligned.o [4]
+  .rodata            const     0x800'04fa     0x1  unwind_debug.o [5]
+  .text              ro code   0x800'04fc    0x10  main.o [1]
+  .text              ro code   0x800'050c    0x10  main.o [1]
+  .text              ro code   0x800'051c     0xc  startupF411RE.o [1]
+  .text              ro code   0x800'0528    0x14  main.o [1]
+  .text              ro code   0x800'053c    0x24  ABIassert.o [5]
+  .text              ro code   0x800'0560     0x6  abort.o [2]
+  .text              ro code   0x800'0568    0x14  exit.o [5]
+  .rodata            const     0x800'057c    0x9c  main.o [1]
+  .text              ro code   0x800'0618    0x38  startupF411RE.o [1]
+  .text              ro code   0x800'0650    0x36  strlen.o [4]
+  .text              ro code   0x800'0688    0x10  startupF411RE.o [1]
+  .text              ro code   0x800'0698    0x10  startupF411RE.o [1]
+  .rodata            const     0x800'06a8    0x34  main.o [1]
+  .text              ro code   0x800'06dc    0x28  data_init.o [4]
+  .text              ro code   0x800'0704    0x22  fpinit_M.o [3]
+  .iar.init_table    const     0x800'0728    0x14  - Linker created -
+  .text              ro code   0x800'073c    0x1e  cmain.o [4]
+  .text              ro code   0x800'075a     0x4  exit.o [2]
+  .text              ro code   0x800'0760     0xa  cexit.o [4]
+  .text              ro code   0x800'076a    0x12  startupF411RE.o [1]
+  Initializer bytes  const     0x800'077c    0x14  <for P2-1>
+  .rodata            const     0x800'0790    0x10  main.o [1]
+  .rodata            const     0x800'07a0     0x0  copy_init3.o [4]
+                             - 0x800'07a0   0x608
+
+"P2", part 1 of 2:                           0x14
+  P2-1                        0x2000'0000    0x11  <Init block>
+    .data            inited   0x2000'0000    0x10  startupF411RE.o [1]
+    .data            inited   0x2000'0010     0x1  startupF411RE.o [1]
+                            - 0x2000'0011    0x11
+
+"P2", part 2 of 2:                         0x2000
+  CSTACK                      0x2000'0018  0x2000  <Block>
+    CSTACK           uninit   0x2000'0018  0x2000  <Block tail>
+                            - 0x2000'2018  0x2000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'07a0   0x807'ffff  0x7'f860
+  0x2000'0014  0x2000'0017       0x4
+  0x2000'2018  0x2001'ffff  0x1'dfe8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x14 (117% of destination):
+           0x800'077c  0x14
+    1 destination range, total size 0x11:
+          0x2000'0000  0x11
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+command line/config:
+    ------------------------------------------------
+    Total:
+
+E:\POIP\UART\Debug\Obj: [1]
+    main.o                     786      224
+    startupF411RE.o            118      425       17
+    ------------------------------------------------
+    Total:                     904      649       17
+
+dl7M_tln.a: [2]
+    abort.o                      6
+    exit.o                       4
+    ------------------------------------------------
+    Total:                      10
+
+m7M_tls.a: [3]
+    fpinit_M.o                  34
+    ------------------------------------------------
+    Total:                      34
+
+rt7M_tl.a: [4]
+    ABImemcpy_unaligned.o       86
+    cexit.o                     10
+    cmain.o                     30
+    copy_init3.o                46
+    data_init.o                 40
+    strlen.o                    54
+    ------------------------------------------------
+    Total:                     266
+
+shb_l.a: [5]
+    ABIassert.o                 36
+    exit.o                      20
+    unwind_debug.o                        1
+    ------------------------------------------------
+    Total:                      56        1
+
+    Gaps                         7        2
+    Linker created                       23    8'192
+----------------------------------------------------
+    Grand Total:             1'277      675    8'209
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'0728          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'073c          --   Gb  - Linker created -
+?main                    0x800'073d         Code  Gb  cmain.o [4]
+CSTACK$$Base            0x2000'0018          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2018          --   Gb  - Linker created -
+DummyModule::handler()   0x800'076b    0x2  Code  Gb  startupF411RE.o [1]
+Region$$Table$$Base      0x800'0728          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'073c          --   Gb  - Linker created -
+UART_interrupt::handler()
+                         0x800'0619   0x38  Code  Gb  startupF411RE.o [1]
+__aeabi_assert           0x800'053d   0x24  Code  Gb  ABIassert.o [5]
+__cmain                  0x800'073d         Code  Gb  cmain.o [4]
+__exit                   0x800'0569   0x14  Code  Gb  exit.o [5]
+__iar_copy_init3         0x800'0477   0x2e  Code  Gb  copy_init3.o [4]
+__iar_data_init3         0x800'06dd   0x28  Code  Gb  data_init.o [4]
+__iar_debug_exceptions   0x800'04fa    0x1  Data  Gb  unwind_debug.o [5]
+__iar_init_vfp           0x800'0705         Code  Gb  fpinit_M.o [3]
+__iar_program_start      0x800'076d   0x10  Code  Gb  startupF411RE.o [1]
+__iar_unaligned_memcpy4
+                         0x800'04a5         Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_unaligned_memcpy8
+                         0x800'04a5         Code  Gb  ABImemcpy_unaligned.o [4]
+__low_level_init         0x800'0199   0x9e  Code  Gb  main.o [1]
+__vector_table           0x800'0000  0x198  Data  Gb  startupF411RE.o [1]
+_call_main               0x800'0749         Code  Gb  cmain.o [4]
+_exit                    0x800'0761         Code  Gb  cexit.o [4]
+_main                    0x800'0757         Code  Gb  cmain.o [4]
+abort                    0x800'0561    0x6  Code  Gb  abort.o [2]
+bool FieldValueBase<RCC_CFGR_SWS_Values<RCC::CFGR, (unsigned int)2, (unsigned int)2, ReadMode, RCC::RCCCFGRBase>, RCC::RCCCFGRBase, (unsigned int)1>::IsSet<ReadMode, void>()
+                         0x800'029d   0x1c  Code  Gb  main.o [1]
+bool FieldValueBase<RCC_CR_HSERDY_Values<RCC::CR, (unsigned int)17, (unsigned int)1, ReadMode, RCC::RCCCRBase>, RCC::RCCCRBase, (unsigned int)1>::IsSet<ReadMode, void>()
+                         0x800'0279   0x10  Code  Gb  main.o [1]
+bool FieldValueBase<TIM2_SR_UIF_Values<TIM2::SR, (unsigned int)0, (unsigned int)1, ReadWriteMode, TIM2::TIM2SRBase>, TIM2::TIM2SRBase, (unsigned int)0>::IsSet<ReadWriteMode, void>()
+                         0x800'0529   0x14  Code  Gb  main.o [1]
+buff                    0x2000'0000   0x10  Data  Gb  startupF411RE.o [1]
+exit                     0x800'075b    0x4  Code  Gb  exit.o [2]
+j                       0x2000'0010    0x1  Data  Gb  startupF411RE.o [1]
+main                     0x800'0237   0x2a  Code  Gb  main.o [1]
+strlen                   0x800'0651         Code  Gb  strlen.o [4]
+unsigned int RegisterField<USART2::CR1, (unsigned int)15, (unsigned int)1, ReadWriteMode, void>::Get<ReadWriteMode, void>()
+                         0x800'0381   0x10  Code  Gb  main.o [1]
+void FieldValueBase<GPIOA_AFRL_AFRL7_Values<GPIOA::AFRL, (unsigned int)12, (unsigned int)4, ReadWriteMode, GPIOA::GPIOAAFRLBase>, GPIOA::GPIOAAFRLBase, (unsigned int)7>::Set<ReadWriteMode, void>()
+                         0x800'0325   0x14  Code  Gb  main.o [1]
+void FieldValueBase<GPIOA_AFRL_AFRL7_Values<GPIOA::AFRL, (unsigned int)8, (unsigned int)4, ReadWriteMode, GPIOA::GPIOAAFRLBase>, GPIOA::GPIOAAFRLBase, (unsigned int)7>::Set<ReadWriteMode, void>()
+                         0x800'0311   0x14  Code  Gb  main.o [1]
+void FieldValueBase<GPIOA_MODER_MODER15_Values<GPIOA::MODER, (unsigned int)4, (unsigned int)2, ReadWriteMode, GPIOA::GPIOAMODERBase>, GPIOA::GPIOAMODERBase, (unsigned int)2>::Set<ReadWriteMode, void>()
+                         0x800'02e9   0x14  Code  Gb  main.o [1]
+void FieldValueBase<GPIOA_MODER_MODER15_Values<GPIOA::MODER, (unsigned int)6, (unsigned int)2, ReadWriteMode, GPIOA::GPIOAMODERBase>, GPIOA::GPIOAMODERBase, (unsigned int)2>::Set<ReadWriteMode, void>()
+                         0x800'02fd   0x14  Code  Gb  main.o [1]
+void FieldValueBase<GPIOA_OTYPER_OT2_Values<GPIOA::OTYPER, (unsigned int)2, (unsigned int)1, ReadWriteMode, GPIOA::GPIOAOTYPERBase>, GPIOA::GPIOAOTYPERBase, (unsigned int)0>::Set<ReadWriteMode, void>()
+                         0x800'0339   0x10  Code  Gb  main.o [1]
+void FieldValueBase<GPIOA_OTYPER_OT3_Values<GPIOA::OTYPER, (unsigned int)3, (unsigned int)1, ReadWriteMode, GPIOA::GPIOAOTYPERBase>, GPIOA::GPIOAOTYPERBase, (unsigned int)0>::Set<ReadWriteMode, void>()
+                         0x800'0349   0x10  Code  Gb  main.o [1]
+void FieldValueBase<GPIOA_PUPDR_PUPDR15_Values<GPIOA::PUPDR, (unsigned int)4, (unsigned int)2, ReadWriteMode, GPIOA::GPIOAPUPDRBase>, GPIOA::GPIOAPUPDRBase, (unsigned int)1>::Set<ReadWriteMode, void>()
+                         0x800'0359   0x14  Code  Gb  main.o [1]
+void FieldValueBase<GPIOA_PUPDR_PUPDR15_Values<GPIOA::PUPDR, (unsigned int)6, (unsigned int)2, ReadWriteMode, GPIOA::GPIOAPUPDRBase>, GPIOA::GPIOAPUPDRBase, (unsigned int)1>::Set<ReadWriteMode, void>()
+                         0x800'036d   0x14  Code  Gb  main.o [1]
+void FieldValueBase<RCC_AHB1ENR_DMA2EN_Values<RCC::APB1ENR, (unsigned int)0, (unsigned int)1, ReadWriteMode, RCC::RCCAPB1ENRBase>, RCC::RCCAPB1ENRBase, (unsigned int)1>::Set<ReadWriteMode, void>()
+                         0x800'0425   0x10  Code  Gb  main.o [1]
+void FieldValueBase<RCC_AHB1ENR_DMA2EN_Values<RCC::APB1ENR, (unsigned int)17, (unsigned int)1, ReadWriteMode, RCC::RCCAPB1ENRBase>, RCC::RCCAPB1ENRBase, (unsigned int)1>::Set<ReadWriteMode, void>()
+                         0x800'02d9   0x10  Code  Gb  main.o [1]
+void FieldValueBase<RCC_AHB1ENR_GPIOAEN_Values<RCC::AHB1ENR, (unsigned int)0, (unsigned int)1, ReadWriteMode, RCC::RCCAHB1ENRBase>, RCC::RCCAHB1ENRBase, (unsigned int)1>::Set<ReadWriteMode, void>()
+                         0x800'02c9   0x10  Code  Gb  main.o [1]
+void FieldValueBase<RCC_CFGR_SW_Values<RCC::CFGR, (unsigned int)0, (unsigned int)2, ReadWriteMode, RCC::RCCCFGRBase>, RCC::RCCCFGRBase, (unsigned int)1>::Set<ReadWriteMode, void>()
+                         0x800'0289   0x14  Code  Gb  main.o [1]
+void FieldValueBase<RCC_CR_HSEON_Values<RCC::CR, (unsigned int)16, (unsigned int)1, ReadWriteMode, RCC::RCCCRBase>, RCC::RCCCRBase, (unsigned int)1>::Set<ReadWriteMode, void>()
+                         0x800'0269   0x10  Code  Gb  main.o [1]
+void FieldValueBase<RCC_CR_HSION_Values<RCC::CR, (unsigned int)0, (unsigned int)1, ReadWriteMode, RCC::RCCCRBase>, RCC::RCCCRBase, (unsigned int)0>::Set<ReadWriteMode, void>()
+                         0x800'02b9   0x10  Code  Gb  main.o [1]
+void FieldValueBase<TIM2_CR1_CEN_Values<TIM2::CR1, (unsigned int)0, (unsigned int)1, ReadWriteMode, TIM2::TIM2CR1Base>, TIM2::TIM2CR1Base, (unsigned int)1>::Set<ReadWriteMode, void>()
+                         0x800'0469    0xe  Code  Gb  main.o [1]
+void FieldValueBase<TIM2_SR_UIF_Values<TIM2::SR, (unsigned int)0, (unsigned int)1, ReadWriteMode, TIM2::TIM2SRBase>, TIM2::TIM2SRBase, (unsigned int)0>::Set<ReadWriteMode, void>()
+                         0x800'044d   0x10  Code  Gb  main.o [1]
+void FieldValueBase<USART2_CR1_M_Values<USART2::CR1, (unsigned int)12, (unsigned int)1, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, (unsigned int)0>::Set<ReadWriteMode, void>()
+                         0x800'03d5   0x10  Code  Gb  main.o [1]
+void FieldValueBase<USART2_CR1_OVER8_Values<USART2::CR1, (unsigned int)15, (unsigned int)1, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, (unsigned int)1>::Set<ReadWriteMode, void>()
+                         0x800'03c5   0x10  Code  Gb  main.o [1]
+void FieldValueBase<USART2_CR1_PCE_Values<USART2::CR1, (unsigned int)10, (unsigned int)1, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, (unsigned int)0>::Set<ReadWriteMode, void>()
+                         0x800'03f9   0x10  Code  Gb  main.o [1]
+void FieldValueBase<USART2_CR1_TE_Values<USART2::CR1, (unsigned int)3, (unsigned int)1, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, (unsigned int)0>::Set<ReadWriteMode, void>()
+                         0x800'0689   0x10  Code  Gb  startupF411RE.o [1]
+void FieldValueBase<USART2_CR1_TE_Values<USART2::CR1, (unsigned int)3, (unsigned int)1, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, (unsigned int)1>::Set<ReadWriteMode, void>()
+                         0x800'04fd   0x10  Code  Gb  main.o [1]
+void FieldValueBase<USART2_CR1_TXEIE_Values<USART2::CR1, (unsigned int)7, (unsigned int)1, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, (unsigned int)0>::Set<ReadWriteMode, void>()
+                         0x800'0699   0x10  Code  Gb  startupF411RE.o [1]
+void FieldValueBase<USART2_CR1_TXEIE_Values<USART2::CR1, (unsigned int)7, (unsigned int)1, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, (unsigned int)1>::Set<ReadWriteMode, void>()
+                         0x800'050d   0x10  Code  Gb  main.o [1]
+void FieldValueBase<USART2_CR1_UE_Values<USART2::CR1, (unsigned int)13, (unsigned int)1, ReadWriteMode, USART2::USART2CR1Base>, USART2::USART2CR1Base, (unsigned int)1>::Set<ReadWriteMode, void>()
+                         0x800'0415   0x10  Code  Gb  main.o [1]
+void FieldValueBase<USART2_CR2_STOP_Values<USART2::CR2, (unsigned int)12, (unsigned int)2, ReadWriteMode, USART2::USART2CR2Base>, USART2::USART2CR2Base, (unsigned int)2>::Set<ReadWriteMode, void>()
+                         0x800'03e5   0x14  Code  Gb  main.o [1]
+void RegisterBase<(unsigned int)1073741860, (unsigned int)32, ReadWriteMode>::Write<ReadWriteMode, void>(unsigned int)
+                         0x800'045d    0xc  Code  Gb  main.o [1]
+void RegisterBase<(unsigned int)1073741864, (unsigned int)32, ReadWriteMode>::Write<ReadWriteMode, void>(unsigned int)
+                         0x800'0435    0xc  Code  Gb  main.o [1]
+void RegisterBase<(unsigned int)1073741868, (unsigned int)32, ReadWriteMode>::Write<ReadWriteMode, void>(unsigned int)
+                         0x800'0441    0xc  Code  Gb  main.o [1]
+void RegisterBase<(unsigned int)1073759236, (unsigned int)32, ReadWriteMode>::Write<ReadWriteMode, void>(unsigned int)
+                         0x800'051d    0xc  Code  Gb  startupF411RE.o [1]
+void RegisterBase<(unsigned int)3758153988, (unsigned int)32, ReadWriteMode>::Write<ReadWriteMode, void>(unsigned int)
+                         0x800'0409    0xc  Code  Gb  main.o [1]
+void RegisterField<USART2::BRR, (unsigned int)4, (unsigned int)12, ReadWriteMode, void>::Set<ReadWriteMode, void>(unsigned int)
+                         0x800'0391   0x34  Code  Gb  main.o [1]
+void RegisterField<USART2::BRR, (unsigned int)4, (unsigned int)12, ReadWriteMode, void>::Set<ReadWriteMode, void>(unsigned int)::string
+                         0x800'057c   0x9c  Data  Gb  main.o [1]
+void RegisterField<USART2::BRR, (unsigned int)4, (unsigned int)12, ReadWriteMode, void>::Set<ReadWriteMode, void>(unsigned int)::string (instance 2)
+                         0x800'06a8   0x34  Data  Gb  main.o [1]
+
+
+[1] = E:\POIP\UART\Debug\Obj
+[2] = dl7M_tln.a
+[3] = m7M_tls.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  1'277 bytes of readonly  code memory
+    675 bytes of readonly  data memory
+  8'209 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

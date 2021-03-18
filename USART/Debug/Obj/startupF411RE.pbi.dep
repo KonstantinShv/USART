@@ -1,0 +1,10 @@
+startupF411RE.pbi: E:\POIP\UART\startupF411RE.cpp \
+  E:\POIP\UART\AHardware\Registers\STM32F411\usart2registers.hpp \
+  E:\POIP\UART\AHardware\Registers\STM32F411\FieldValues\usart2fieldvalues.hpp \
+  E:\POIP\UART\AHardware\Registers\fieldvalue.hpp \
+  D:\Папка\Универ\7\ семак\IAR\arm\inc\cpp\cstddef \
+  D:\Папка\Универ\7\ семак\IAR\arm\inc\c\stddef.h \
+  D:\Папка\Универ\7\ семак\IAR\arm\inc\c\ycheck.h \
+  D:\Папка\Универ\7\ семак\IAR\arm\inc\c\yvals.h \
+  D:\Папка\Универ\7\ семак\IAR\arm\inc\c\DLib_Defaults.h \
+  D:\Папка\Универ\7\ семак\IAR\arm\inc\c\DLib_Product.h
